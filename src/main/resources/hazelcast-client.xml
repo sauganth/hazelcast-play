@@ -7,10 +7,12 @@
         <password>dev</password>
     </group>
     <license-key>HAZELCAST_ENTERPRISE_LICENSE_KEY</license-key>
-
     <network>
         <cluster-members>
             <address>127.0.0.1</address>
         </cluster-members>
+        <connection-timeout>60000</connection-timeout>
+        <connection-attempt-period>5000</connection-attempt-period>
+        <connection-attempt-limit>5</connection-attempt-limit>
     </network>
 </hazelcast-client>
